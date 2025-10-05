@@ -261,6 +261,23 @@ require('lazy').setup({
     'nvim-telescope/telescope-file-browser.nvim',
     dependencies = { 'nvim-telescope/telescope.nvim', 'nvim-lua/plenary.nvim' },
   },
+  -- Kanagawa theme...
+  {
+    'rebelot/kanagawa.nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require('kanagawa').setup {}
+    end,
+  },
+  -- Iceberg theme
+  {
+    'cocopon/iceberg.vim',
+    lazy = false,
+    priority = 1000,
+    config = function() end,
+  },
+
   -- Alternatively, use `config = function() ... end` for full control over the configuration.
   -- If you prefer to call `setup` explicitly, use:
   --    {
@@ -899,11 +916,8 @@ require('lazy').setup({
           comments = { italic = false }, -- Disable italics in comments
         },
       }
-
-      -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      vim.cmd.colorscheme 'lunaperche'
     end,
   },
 
@@ -1034,6 +1048,9 @@ vim.api.nvim_create_autocmd('FileType', {
 -- Initialising telescope file browser (there is also the --lazy part)
 require('telescope').load_extension 'file_browser'
 vim.keymap.set('n', '<leader>e', ':Telescope file_browser<CR>', { desc = 'File Browser' })
+
+-- Theme setter!
+vim.cmd [[colorscheme iceberg]]
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
