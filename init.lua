@@ -1060,7 +1060,7 @@ require('telescope').load_extension 'file_browser'
 vim.keymap.set('n', '<leader>e', ':Telescope file_browser<CR>', { desc = 'File Browser' })
 
 -- Theme setter!
-vim.cmd [[colorscheme kanagawa]]
+vim.cmd [[colorscheme lunaperche]]
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
