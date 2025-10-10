@@ -1045,6 +1045,16 @@ vim.api.nvim_create_autocmd('FileType', {
   end,
 })
 
+-- Fixing .txt tabs
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = 'text',
+  callback = function()
+    vim.opt_local.tabstop = 4
+    vim.opt_local.shiftwidth = 4
+    vim.opt_local.expandtab = true
+  end,
+})
+
 -- Initialising telescope file browser (there is also the --lazy part)
 require('telescope').load_extension 'file_browser'
 vim.keymap.set('n', '<leader>e', ':Telescope file_browser<CR>', { desc = 'File Browser' })
