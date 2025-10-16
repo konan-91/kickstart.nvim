@@ -277,6 +277,42 @@ require('lazy').setup({
     priority = 1000,
     config = function() end,
   },
+  -- XCode Theme
+  {
+    'arzg/vim-colors-xcode',
+  },
+  -- Paper theme
+  {
+    'NLKNguyen/papercolor-theme',
+  },
+  -- Rose-pine
+  {
+    'rose-pine/neovim',
+  },
+  -- Shithub
+  {
+    'projekt0n/github-nvim-theme',
+  },
+  -- ayu
+  {
+    'ayu-theme/ayu-vim',
+  },
+  -- Jellybeans
+  {
+    'nanotech/jellybeans.vim',
+  },
+  -- Falcon
+  {
+    'fenetikm/falcon',
+  },
+  -- Bamboo
+  {
+    'ribru17/bamboo.nvim',
+  },
+  -- Mellow
+  {
+    'mellow-theme/mellow.nvim',
+  },
 
   -- Alternatively, use `config = function() ... end` for full control over the configuration.
   -- If you prefer to call `setup` explicitly, use:
@@ -1060,7 +1096,7 @@ require('telescope').load_extension 'file_browser'
 vim.keymap.set('n', '<leader>e', ':Telescope file_browser<CR>', { desc = 'File Browser' })
 
 -- Theme setter!
-vim.cmd [[colorscheme lunaperche]]
+vim.cmd [[colorscheme falcon]]
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
