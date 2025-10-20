@@ -313,6 +313,42 @@ require('lazy').setup({
   {
     'mellow-theme/mellow.nvim',
   },
+  -- Dracular
+  {
+    'dracula/vim',
+  },
+  -- Zenbones
+  {
+    'zenbones-theme/zenbones.nvim',
+  },
+  -- Nord
+  {
+    'shaunsingh/nord.nvim',
+  },
+  -- Embark
+  {
+    'embark-theme/vim',
+  },
+  -- Monochrome
+  {
+    'fxn/vim-monochrome',
+  },
+  -- Poi
+  {
+    'olivercederborg/poimandres.nvim',
+  },
+  -- Baby Gruvbox
+  {
+    'luisiacc/gruvbox-baby',
+  },
+  -- Melon
+  {
+    'ramojus/mellifluous.nvim',
+  },
+  -- Blu
+  {
+    'uloco/bluloco.nvim',
+  },
 
   -- Alternatively, use `config = function() ... end` for full control over the configuration.
   -- If you prefer to call `setup` explicitly, use:
@@ -1096,7 +1132,7 @@ require('telescope').load_extension 'file_browser'
 vim.keymap.set('n', '<leader>e', ':Telescope file_browser<CR>', { desc = 'File Browser' })
 
 -- Theme setter!
-vim.cmd [[colorscheme falcon]]
+vim.cmd [[colorscheme iceberg]]
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
